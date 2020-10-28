@@ -1,0 +1,619 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>TMA 3A</title>
+    <link rel="stylesheet" type="text/css" href="./shared/tma3a.css" />
+</head>
+<body>
+    <!--Top bar. Copy over to other sections.-->
+    <div class="topNavBar">
+        <!--Main Nav Menu-->
+        <div class="navMenu">
+            <img class="menuIcon" alt="navMenu" src="/shared/icons/Hamburger_icon.png" />
+            <div class="navMenuContent">
+                <a href="/part1/part1.aspx">Part 1</a>
+                <a href="/part2/part2.aspx">Part 2</a>
+                <a href="/part3/part3.aspx">Part 3</a>
+                <a href="/part4/part4.aspx">Part 4</a>
+            </div>
+        </div>
+        <!--Return Home Link-->
+        <a href="#" id="homeLink">TMA 3A</a>
+    </div>
+    <!--Back to top-->
+    <div class="backToTop">
+        <a href="#pageTop">Back to Top</a>
+    </div>
+    <!--Cover Page-->
+    <div class="coverPageMain">
+        <div class="coverPageTitle">
+            <h1 id="pageTop">COMP 466: Advanced Technologies for Web-Based System</h1>
+            <h2>Assignment #3A</h2>
+        </div>
+        <div class="CoverPageInfo">
+            <div>By: Michael G. Oranski</div>
+            <div>ID: 2743708</div>
+            <div>Date Began: Oct. 6, 2020</div>
+            <div>Date Completed: Oct. 27, 2020</div>
+            <div>Est. Hrs: 133.5Hours</div>
+        </div>
+    </div>
+    <img class="divider" alt="divider" src="shared/icons/divider.png" />
+    <!--Sub Nav Menu-->
+    <div class="subNav">
+        <a href="#assignDescription">Assignment Description</a>
+        <a href="#analysisAndDesign">Analysis and Design</a>
+        <a href="#userGuide">User Guide</a>
+        <a href="#reference">Reference</a>
+    </div>
+    <!--Assignment Description-->
+    <div class="assignmentDescription">
+        <h2 id="assignDescription">Assignment Description</h2>
+        <p>This assignment consists of four parts.</p>
+        <div class="descriptionNav">
+            <a href="#partOne">Part 1</a>
+            <a href="#partTwo">Part 2</a>
+            <a href="#partThree">Part 3</a>
+            <a href="#partFour">Part 4</a>
+        </div>
+        <div class="partDescription">
+            <h3 id="partOne">Part 1</h3>
+            <p>
+                Create a web application with ASP.NET in C# that uses a persistent cookie to track how many times a client computer has visited the page.
+                In addition to the number of hits, the application also needs to display the IP address of the client computer and the time zone where the client computer is located.
+            </p>
+        </div>
+        <div class="partDescription">
+            <h3 id="partTwo">Part 2</h3>
+            <p>
+                Develop a web application using ASP.NET in C# that runs a slideshow of a list of pictures.
+                The requirements are as follows:
+            </p>
+            <ol>
+                <li>
+                    Information about the pictures must be stored on the server either in a database or in a text file.
+                    These details would include the name and location or URL of each picture and a description of the picture to be used as a caption, which must be stored in a plain text file or a database.
+                </li>
+                <li>The caption should be shown under each picture in the show.</li>
+                <li>There should be a button to start/stop the show.</li>
+                <li>There should be a control to toggle the show between random and sequential.</li>
+                <li>There should be buttons to manually turn the show backward or forward, only if the show is in sequential mode.</li>
+                <li>You may reuse the pictures you have used for assignment 1.</li>
+                <li>The show should have at least 20 nice pictures.</li>
+            </ol>
+        </div>
+        <div class="partDescription">
+            <h3 id="partThree">Part 3</h3>
+            <p>
+                In parts 3 and 4 of this assignment, you will be developing an online computer store in which customers can select a computer from a list and customize it by replacing some components in its standard configuration with others that may be better or cheaper.
+                Customers can then place an order with the online store.
+            </p>
+            <p>
+                In this part, your focus should be on the web interface design and implementation of the online store, using ASP.NET in C# as server-side language and other web technologies you have learned from Units 1–4.
+                The requirements are as follows:
+            </p>
+            <ol>
+                <li>Visit some online stores such as Bestbuy.CA and Amazon.CA, study their designs and functionalities, and write your findings in the assignment report.</li>
+                <li>Based on your study above, analyze the requirements of the web application you are to develop and then work out a design of the web application, including drawings of the interface, name and functions of each modules you will need, and web pages/documents to be used.</li>
+                <li>The application running in a web browser should be like a real online store, with a name and logo, menus and buttons for navigation, a welcome page to greet customers, and other pages, such as contacts and a feedback form, and so on.</li>
+                <li>There should be a list of computers, lists of different parts or components (no less than five different components including at least RAM, hard drive, CPU, display, OS, and soundcard) of computers that can be reviewed by customers. At this stage, the information about these products can be hard coded into the HTML or program files.</li>
+                <li>A customer can select a computer with default/standard configuration and pricing, and then customize it by changing its configuration, that is, by replacing one component with another from a list of compatible components.</li>
+                <li>Whenever a change has been made by the customer, the price total needs to be dynamically changed and displayed to the customer, in an area embedded in the online store, not in a pop-up window.</li>
+                <li>After the customer has hit the Buy or Add to Cart or something similar, a summary of selections, including all the details of the customized computer and its pricing, should be displayed in the browser window.</li>
+                <li>At this stage, you don’t need to save orders placed by customers in the database. You can use Cookies to store and track customer selections.</li>
+                <li>All links, menus, and buttons within the online store should be active.</li>
+            </ol>
+        </div>
+        <div class="partDescription">
+            <h3 id="partFour">Part 4</h3>
+            <p>
+                In part 4 of the assignment, you will continue your work completed in part 3, to develop a fully functioning online computer store (without payment transaction, though).
+                Your tasks for this part are:
+            </p>
+            <ol>
+                <li>Add a customer management module to the online computer store, which should include new customer registration, customer authentication, and password recovery.</li>
+                <li>Add an order management module which will save orders for registered customers and allow registered customers to manage their orders, including view the list and details of each item in the list and delete or make changes to a selected order in the list.</li>
+                <li>
+                    Design and implement a back-end database to support your online computer store that does the following.
+                    <ol type="a">
+                        <li>Store all the details of the computers and components and replace all the data hard coded into the program files with data from the database.</li>
+                        <li>Use the database for all your customer management.</li>
+                        <li>Use the database for all your order management. When an order is submitted, the details of the order, including pricing, need to be saved in the database, and then displayed in an appropriate format to the customer.</li>
+                    </ol>
+            </ol>
+        </div>
+    </div>
+    <img class="divider" alt="divider" src="shared/icons/divider.png" />
+    <!--Analysis and Design-->
+    <div class="assignmentDescription">
+        <h2 id="analysisAndDesign">Analysis and Design</h2>
+        <div class="descriptionNav">
+            <a href="#Part1and2">Part 1 and 2 Analysis</a>
+            <a href="#Part3Analysis">Part 3 Analysis</a>
+            <a href="#Part4Analysis">Part 4 Analysis</a>
+        </div>
+        <div class="partDescription">
+            <h3 class="MainPageH3" id="Part1and2">Part 1 and 2</h3>
+            <p>
+                Part 1 and 2 of this project was designed and completed using the agile/scrum development methodology.
+                The agile/scrum development methodology is a project management system that relies on incremental development.
+                This incremental development is achieved by dividing the work into cycles of short work periods called sprints.
+                Each sprint consists of planning, analysis, coding and review.
+                Each sprint time length is designated as one day long.
+            </p>
+            <p>The analysis of Part 1 has resulted in the following requirements:</p>
+            <p>The web page must:</p>
+            <ul>
+                <li>Use a persistent cookie.</li>
+                <li>Track how many times a client computer visits the web page.</li>
+                <li>Display the number of times a client has visited.</li>
+                <li>Display the client’s computer IP address.</li>
+                <li>Display the time zone of the client computer.</li>
+            </ul>
+            <p>The analysis of Part 2 has resulted in the following requirements: </p>
+            <p>The web page must:</p>
+            <ul>
+                <li>Be a slideshow.</li>
+                <li>Store information about the pictures in a database or text file.</li>
+                <li>Display a caption under each picture.</li>
+                <li>Have a button to start/stop the show.</li>
+                <li>Have a button that toggles the random and sequential transition between pictures.</li>
+                <li>Have button that manually turns the show backward or forward.</li>
+                <li>Not allow manual transition when the show is not in sequential mode.</li>
+                <li>Have at least 20 pictures.</li>
+            </ul>
+            <p>The database/text file:</p>
+            <ul>
+                <li>Should include the name and location of each picture.</li>
+                <li>Must include a description for each picture.</li>
+            </ul>
+            <h3 class="MainPageH3">Part 2: SQL Table</h3>
+            <code>
+                CREATE TABLE [dbo].[part2Pictures] (<br />
+                [imageId]       INT  NOT NULL,<br />
+                [imageCaption]  TEXT NOT NULL,<br />
+                [imageLocation] TEXT NOT NULL,<br />
+                PRIMARY KEY CLUSTERED ([imageId] ASC)<br />
+                );<br />
+            </code>
+        </div>
+        <div class="partDescription">
+            <h3 class="MainPageH3" id="Part3Analysis">Part 3</h3>
+            <p>
+                Part 3 of the project was designed and completed using the waterfall development methodology.
+                The waterfall development methodology is a project management system that breaks down the project activities into linear sequential phases.
+                Each of these phases depends on the deliverables of the previous phase.
+                These phases are:
+            </p>
+            <ol type="1">
+                <li>Requirements</li>
+                <li>Design</li>
+                <li>Implementation</li>
+                <li>Verification</li>
+                <li>Maintenance.</li>
+            </ol>
+            <h3 class="MainPageH3">Purpose</h3>
+            <p>
+                The purpose of Part 3 is the development of an online computer store.
+                Customers can select a computer from a list and customize it.
+                Computers are customized by replacing its components in its standard configuration with other components.
+                Customers can then place an order with the online store.
+            </p>
+            <h3 class="MainPageH3">Design</h3>
+            <p>
+                The design for Part 3 began with analysing other online stores such as Bestbuy, Amazon, Staples and The Source.
+                This analysis has revealed the following:
+            </p>
+            <ul>
+                <li>The topmost bar contains the logo, search bar, user account and cart link.</li>
+                <li>Logo for the website is in the upper left corner or at the top of the page in the center.</li>
+                <li>The logo is a link back to the main page of the store.</li>
+                <li>Top right contains the links to user account and cart.</li>
+                <li>The navigation bar is located underneath the topmost bar.</li>
+                <li>The navigation bar contains links or dropdown menus to different sections of the store.</li>
+                <li>Clicking on the links opens to a new page.</li>
+                <li>Underneath the topmost bar and the navigation bar is the main area or store front.</li>
+                <li>The main area is usually accented by two blank columns on either sides that draws the customers’ attention towards the center of the page.</li>
+                <li>The topmost section of the main area is dominated by any special promotion or service that the store has going on.</li>
+                <li>Clicking on the special promotion either loads the product or shifts to the next special promotion without reloading page.</li>
+                <li>Underneath the promotion is the list of services that the store has available or any products that are also on sale.</li>
+                <li>Bottom of the page either in the bottom left or right are links to contact information, feedback, return policy, hiring policy, or other helpful information.</li>
+                <li>Main color scheme of the stores are usually neutral colors (white, gray, pale blue, etc.) which are easy on the eyes and gives the feeling of nonaggressive attitude.</li>
+                <li>Any bright colors (ex. Red) are usually used to bring attention to specific parts of the website.</li>
+                <li>Clicking on add to card updates the cart after reloading page with a pop-up indicating that product was successfully added to cart.</li>
+                <li>Remove item from the cart, click on trash can icon next to the product.</li>
+                <li>Clicking on product goes to product description page.</li>
+                <li>When viewing cart, items are typically shown on the left while the order total is shown on the right.</li>
+                <li>Clicking on the checkout button on the cart page requires the user to be logged in.</li>
+            </ul>
+            <h3 class="MainPageH3">Requirements</h3>
+            <p>The analysis of Part 3 has resulted in the following requirements:</p>
+            <h3 class="MainPageH3">OOD Diagram</h3>
+            <img src="shared/report/UML.png" class="ReportImage" alt="OOD class for computer store" />
+            <h3 class="MainPageH3">Wire Frame: Interface</h3>
+            <h4>Home page</h4>
+            <img src="shared/report/PCustom_home.png" class="ReportImage" alt="home page" />
+            <h4>Sign Up Page</h4>
+            <img src="shared/report/Sign up Interface.png" class="ReportImage" alt="Sign up" />
+            <h4>Login Page</h4>
+            <img src="shared/report/Login Interface.png" class="ReportImage" alt="Log in" />
+            <h4>Product Display Page</h4>
+            <img src="shared/report/Product display Interface.png" class="ReportImage" alt="product display" />
+            <h4>Customize Page</h4>
+            <img src="shared/report/Customize Interface.png" class="ReportImage" alt="Customize page" />
+            <h4>Cart Page</h4>
+            <img src="shared/report/cartInterface.png" class="ReportImage" alt="Cart page" />
+            <h4>Return Policy Page</h4>
+            <img src="shared/report/Return&Exchange Interface.png" class="ReportImage" alt="return page" />
+            <h4>Contact Us Page</h4>
+            <img src="shared/report/Contact us Interface.png" class="ReportImage" alt="Contact Us page" />
+            <h4>FeedBack Page</h4>
+            <img src="shared/report/Feed Back Interface.png" class="ReportImage" alt="FeedBack page" />
+        </div>
+        <div class="partDescription">
+            <h3 class="MainPageH3" id="Part4Analysis">Part 4</h3>
+            <p>
+                Part 4 of this project was designed and completed using the agile/scrum development methodology.
+                The agile/scrum development methodology is a project management system that relies on incremental development.
+                This incremental development is achieved by dividing the work into cycles of short work periods called sprints.
+                Each sprint consists of planning, analysis, coding and review.
+                Each sprint time length is designated as one day long.
+            </p>
+            <h3 class="MainPageH3">Purpose</h3>
+            <p>
+                To add a backend database to the computer store designed in Part 3.
+                Customers can register and login to the store.
+                Orders can be saved and retrieved from the database.
+                All information about components and computers are retrieved from the database.
+            </p>
+            <h3 class="MainPageH3">Requirements</h3>
+            <p>
+                The requirements for Part 4 are the same as in Part 3 with the additions of the following requirements:
+                <a href="shared/report/Requirements.xlsx" target="_blank">Part 3 Requirements Excel</a>
+            </p>
+            <ul>
+                <li>Users must be able to register for an account.</li>
+                <li>Users must be able to recover their password.</li>
+                <li>User must be able to login.</li>
+                <li>Product information must be stored in database.</li>
+                <li>Orders must be stored in database.</li>
+                <li>User can add/remove items from orders.</li>
+                <li>User can see all past orders.</li>
+                <li>Users can delete orders.</li>
+                <li>User can logout of their account.</li>
+            </ul>
+            <h3 class="MainPageH3">Database Relationships</h3>
+            <div class="DatabaseRelationshipContainer">
+                <img src="shared/report/Computer Store.png" class="ReportImage" alt="DataBase relationship diagram" />
+            </div>
+            <h3 class="MainPageH3">Part 4: SQL Table</h3>
+            <code>
+                CREATE TABLE [dbo].[Computer] ( <br />
+                [ID]        INT          IDENTITY (1, 1) NOT NULL,<br />
+                [CPU]       INT          NOT NULL,<br />
+                [Ram]       INT          NOT NULL,<br />
+                [Sound]     INT          NOT NULL,<br />
+                [OS]        INT          NOT NULL,<br />
+                [HardDrive] INT          NOT NULL,<br />
+                [Display]   INT          NOT NULL,<br />
+                [Price]     FLOAT (53)   NOT NULL,<br />
+                [Image]     VARCHAR (60) NULL,<br />
+                PRIMARY KEY CLUSTERED ([ID] ASC)<br />
+                );<br />
+            </code>
+            <br />
+            <code>
+                CREATE TABLE [dbo].[Users] (<br />
+                [Id]        INT           IDENTITY (1, 1) NOT NULL,<br />
+                [FirstName] VARCHAR (60)  NOT NULL,<br />
+                [LastName]  VARCHAR (60)  NOT NULL,<br />
+                [Email]     VARCHAR (100) NOT NULL,<br />
+                [Password]  TEXT          NOT NULL,<br />
+                PRIMARY KEY CLUSTERED ([Id] ASC)<br />
+                );<br />
+            </code>
+
+            <code>
+                CREATE TABLE [dbo].[Parts] (<br />
+                [Part ID]     INT          IDENTITY (1, 1) NOT NULL,<br />
+                [Description] TEXT         NOT NULL,<br />
+                [Price]       FLOAT (53)   NOT NULL,<br />
+                [Image]       VARCHAR (50) NULL,<br />
+                PRIMARY KEY CLUSTERED ([Part ID] ASC)<br />
+                );<br />
+            </code>
+            <br />
+            <code>
+                CREATE TABLE [dbo].[OrderItems] (<br />
+                [OrderNum] INT NOT NULL,<br />
+                [PartID]   INT NULL,<br />
+                [CompID]   INT NULL,<br />
+                [ID]       INT IDENTITY (1, 1) NOT NULL<br />
+                );<br />
+            </code>
+
+            <code>
+                CREATE TABLE [dbo].[OrderTable] (<br />
+                [OrderNum] INT      IDENTITY (1, 1) NOT NULL,<br />
+                [userID]   INT      NOT NULL,<br />
+                [Date]     DATETIME NOT NULL,<br />
+                PRIMARY KEY CLUSTERED ([OrderNum] ASC)<br />
+                );<br />
+            </code>
+            <br />
+            <code>
+                CREATE TABLE [dbo].[Sound] (<br />
+                [Id] INT NOT NULL,<br />
+                PRIMARY KEY CLUSTERED ([Id] ASC)<br />
+                );<br />
+            </code>
+            <br />
+            <code>
+                CREATE TABLE [dbo].[HardDrive] (<br />
+                [Id] INT NOT NULL,<br />
+                PRIMARY KEY CLUSTERED ([Id] ASC)<br />
+                );<br />
+            </code>
+            <br />
+            <code>
+                CREATE TABLE [dbo].[Monitor] (
+                [Id] INT NOT NULL,
+                PRIMARY KEY CLUSTERED ([Id] ASC)
+                );
+            </code>
+            <br />
+            <code>
+                CREATE TABLE [dbo].[OpSys] (<br />
+                [Id] INT NOT NULL,<br />
+                PRIMARY KEY CLUSTERED ([Id] ASC)<br />
+                );<br />
+            </code>
+            <br />
+            <code>
+                CREATE TABLE [dbo].[CPU] (<br />
+                [Id] INT NOT NULL,<br />
+                PRIMARY KEY CLUSTERED ([Id] ASC)<br />
+                );<br />
+            </code>
+            <br />
+            <code>
+                CREATE TABLE [dbo].[Ram] (<br />
+                [id] INT NOT NULL,<br />
+                PRIMARY KEY CLUSTERED ([id] ASC)<br />
+                );<br />
+            </code>
+        </div>
+    </div>
+    <img class="divider" alt="divider" src="shared/icons/divider.png" />
+    <!--User Guide-->
+    <div>
+        <h2 id="userGuide">User Guide</h2>
+        <p>To view the web site on a live server, please click <a href="https://tma3a20201027165959.azurewebsites.net/tma3a.htm" target="_blank">here</a> (https://tma3a20201027165959.azurewebsites.net/tma3a.htm).</p>
+        <p>
+            To view the website without visiting another server, please download and install the latest version of Visual Studio.
+            Start Visual Studio and click on Open a Web Site.
+            In the Browse dialog box, move to where you have store the folder TMA3A.
+            Click on folder TMA3A and press Open.
+            When the program has finished loading the folder, press F5 to start the project.
+        </p>
+        <p>
+            If run into The CodeDom provider type “Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider” could not be located error,
+            Perform the following:
+        </p>
+        <ol type="1">
+            <li>right click project's References folder, to open NuGet Package Manager</li>
+            <li>Under Browse tab, search for "DotNetCompilerPlatform" and install "Microsoft.CodeDom.Providers.DotNetCompilerPlatform" lib</li>
+        </ol>
+        <p>Solution from: https://stackoverflow.com/questions/33319675/the-codedom-provider-type-microsoft-codedom-providers-dotnetcompilerplatform-cs</p>
+        <p>TMA3A should contain the following folders/files:</p>
+        <ul>
+            <li>Part1</li>
+            <li>Part2</li>
+            <li>Part3</li>
+            <li>Part4</li>
+            <li>Shared</li>
+            <li>tma3a.htm</li>
+            <li>DataClasses1.dbml</li>
+            <li>Web.config</li>
+            <li>App_Data</li>
+        </ul>
+        <p>App_Data should contain the following files/folders:</p>
+        <ul>
+            <li>tma3a.mdf</li>
+        </ul>
+        <p>part1 should contain the following files/folders:</p>
+        <ul>
+            <li>part1.aspx</li>
+        </ul>
+        <p>part2 should contain the following files/folders:</p>
+        <ul>
+            <li>part2.aspx</li>
+            <li>icons</li>
+            <li>slideshow</li>
+        </ul>
+        <p>part2/icons should contain the following files/folders:</p>
+        <ul>
+            <li>back.png</li>
+            <li>forward.png</li>
+            <li>play.png</li>
+            <li>random.png</li>
+            <li>sequent.png</li>
+            <li>stop.png</li>
+        </ul>
+        <p>part2/slideshow should contain the following files/folders:</p>
+        <ul>
+            <li>1 to 20 .jpg files</li>
+        </ul>
+        <p>Part3 should contain the following files/folders:</p>
+        <ul>
+            <li>ComputerParts</li>
+            <li>Cart.aspx</li>
+            <li>ComputerList.aspx</li>
+            <li>ContactUs.aspx</li>
+            <li>Customize.aspx</li>
+            <li>FeedBack.aspx</li>
+            <li>Login.aspx</li>
+            <li>part3.aspx</li>
+            <li>partList.aspx</li>
+            <li>Return.aspx</li>
+            <li>SignUp.aspx</li>
+        </ul>
+        <p>Part3 should contain the following files/folders:</p>
+        <ul>
+            <li>Components.cs</li>
+            <li>Computer.cs</li>
+            <li>CPU.cs</li>
+            <li>Display.cs</li>
+            <li>HardDrive.cs</li>
+            <li>MasterList.cs</li>
+            <li>OpSys.cs</li>
+            <li>Ram.cs</li>
+            <li>SoundCard.cs</li>
+        </ul>
+        <p>Part4 should contain the following files/folders:</p>
+        <ul>
+            <li>Cart.aspx</li>
+            <li>ComputerList.aspx</li>
+            <li>ContactUs.aspx</li>
+            <li>Customize.aspx</li>
+            <li>FeedBack.aspx</li>
+            <li>Login.aspx</li>
+            <li>part3.aspx</li>
+            <li>partList.aspx</li>
+            <li>Return.aspx</li>
+            <li>SignUp.aspx</li>
+            <li>Order.aspx</li>
+        </ul>
+        <p>Shared should contain the following files and folders:</p>
+        <ul>
+            <li>Icons</li>
+            <li>Image</li>
+            <li>report</li>
+            <li>tma3a.css</li>
+        </ul>
+        <p>shared/icons should contain the following files and folder:</p>
+        <ul>
+            <li>Account.png</li>
+            <li>bin.png</li>
+            <li>compCustom.png</li>
+            <li>cost.png</li>
+            <li>divider.png</li>
+            <li>edit.png</li>
+            <li>Hamburger_icon.png</li>
+            <li>List.png</li>
+            <li>monitor.png</li>
+            <li>parts.png</li>
+            <li>PCustom.png</li>
+            <li>shoppingCart.png</li>
+        </ul>
+        <p>shared/image should contain the following files and folder:</p>
+        <ul>
+            <li>comp1.png</li>
+            <li>comp2.png</li>
+            <li>comp3.png</li>
+            <li>compMonitor.png</li>
+            <li>cpu.jpg</li>
+            <li>hardDrive.jpg</li>
+            <li>logout.png</li>
+            <li>os.jpg</li>
+            <li>Ram.jpg</li>
+            <li>soundCard.png</li>
+        </ul>
+        <p>shared/report should contain the following files and folder:</p>
+        <ul>
+            <li>cartInterface.png</li>
+            <li>Computer Store.png</li>
+            <li>Contact us Interface.png</li>
+            <li>Customize Interface.png</li>
+            <li>Feed Back Interface.png</li>
+            <li>Login Interface.png</li>
+            <li>PCustom_home.png</li>
+            <li>Product display Interface.png</li>
+            <li>Return&Exchange Interface.png</li>
+            <li>Sign up Interface.png</li>
+            <li>UML.png</li>
+        </ul>
+    </div>
+    <img class="divider" alt="divider" src="shared/icons/divider.png" />
+    <!--References-->
+    <div>
+        <h2 id="reference">References</h2>
+        <div>
+            Cube, C., 2020. 'Media Player UI' By Creative Cube. [online] Iconfinder. Available at: &lt;https://www.iconfinder.com/icons/1048754/play_play_arrow_play_button_play_icon_play_symbol_start_icon&gt; [Accessed 16 August 2020].
+        </div>
+        <div>
+            Cube, C., 2020. 'Media Player UI' By Creative Cube. [online] Iconfinder. Available at: &lt;https://www.iconfinder.com/icons/1048746/stop_stop_button_stop_icon_stop_square_stop_symbol_icon&gt; [Accessed 16 August 2020].
+        </div>
+        <div>
+            En.wikipedia.org. 2020. Hamburger Button. [online] Available at: &lt;https://en.wikipedia.org/wiki/Hamburger_button&gt; [Accessed 26 July 2020].
+        </div>
+        <div>
+            Iconfinder. 2020. 'Symbolicons Line' By Symbolicons. [online] Available at: &lt;https://www.iconfinder.com/icons/112271/control_media_mix_mixed_random_randomize_shuffle_icon&gt; [Accessed 16 August 2020].
+        </div>
+        <div>
+            LLC, W., 2020. 'Streamline - Video' By Webalys LLC. [online] Iconfinder. Available at: &lt;https://www.iconfinder.com/icons/234839/arrow_arrows_forward_right_icon&gt; [Accessed 16 August 2020].
+        </div>
+        <div>
+            Méder, A., 2020. 'Emails' By Alpár-Etele Méder. [online] Iconfinder. Available at: &lt;https://www.iconfinder.com/icons/1905938/arrow_forward_right_icon&gt; [Accessed 16 August 2020].
+        </div>
+        <div>
+            Pngfuel.com. 2020. Angle, Divider Free Png | Pngfuel. [online] Available at: &lt;https://www.pngfuel.com/free-png/ntaeb&gt; [Accessed 4 August 2020].
+        </div>
+        <div>
+            Askleo.com. 2020. What's The Difference Between I3, I5, And I7 Processors? - Ask Leo!. [online] Available at: &lt;https: //askleo.com/whats_the_difference_between_i3_i5_and_i7_processors /&gt; [Accessed 12 October 2020].
+        </div>
+        <div>
+            Business Insider. 2020. Why I Always Recommend Macs Over Pcs — Even Though They're Usually A Lot More Expensive. [online] Available at: &lt;https: //www.businessinsider.com/apple-mac-vs-windows-pc-why-i-chose-macbook-2018-3&gt;[Accessed 16 October 2020].
+        </div>
+        <div>
+            Definitions, R. and Hope, C., 2020. What Is RAM (Random-Access Memory)?. [online] Computerhope.com. Available at: &lt;https: //www.computerhope.com/jargon/r/ram.htm&gt; [Accessed 12 October 2020].
+        </div>
+        <div>
+            En.wikipedia.org. 2020. Hard Disk Drive. [online] Available at: &lt;https: //en.wikipedia.org/wiki/Hard_disk_drive#/media/File:Laptop-hard-drive-exposed.jpg&gt; [Accessed 12 October 2020].
+        </div>
+        <div>
+            Flaticon. 2020. Bin Free Vector Icons Designed By Freepik. [online] Available at: &lt;https: //www.flaticon.com/free-icon/bin_3638336?term =trash&page =1&position =5&gt; [Accessed 23 October 2020].
+        </div>
+        <div>
+            Flaticon. 2020. Clipboard Free Vector Icons Designed By Kiranshastry. [online] Available at: &lt;https: //www.flaticon.com/free-icon/clipboard_839860?term =list&page =1&position =1&gt; [Accessed 24 October 2020].
+        </div>
+        <div>
+            Flaticon. 2020. Cost Free Vector Icons Designed By Surang. [online] Available at: &lt;https: //www.flaticon.com/free-icon/cost_2399035?term =cost&page =1&position =23&gt; [Accessed 12 October 2020].
+        </div>
+        <div>
+            Flaticon. 2020. Monitor Free Vector Icons Designed By Freepik. [online] Available at: &lt;https: //www.flaticon.com/free-icon/monitor_263082&gt;[Accessed 12 October 2020].
+        </div>
+        <div>
+            Flaticon. 2020. Monitor Free Vector Icons Designed By Freepik. [online] Available at: &lt;https: //www.flaticon.com/free-icon/monitor_263082&gt;[Accessed 12 October 2020].
+        </div>
+        <div>
+            Flaticon. 2020. Pencil Free Vector Icons Designed By Freepik. [online] Available at: &lt;https: //www.flaticon.com/free-icon/pencil_650143?term =edit&page =1&position =17&gt;[Accessed 24 October 2020].
+        </div>
+        <div>
+            Flaticon. 2020. Settings Free Vector Icons Designed By Freepik. [online] Available at: &lt;https: //www.flaticon.com/free-icon/settings_3593729?term =gear&page =1&position =49&gt;[Accessed 12 October 2020].
+        </div>
+        <div>
+            Flaticon. 2020. Shopping Cart Empty Side View Free Vector Icons Designed By Freepik. [online] Available at: &lt;https: //www.flaticon.com/free-icon/shopping-cart-empty-side-view_34568?term =cart&page =1&position =7&gt;[Accessed 12 October 2020].
+        </div>
+        <div>
+            Flaticon.com. 2020. [online] Available at: &lt;https: //www.flaticon.com/premium-icon/icons/svg/1799/1799767.svg&gt;[Accessed 12 October 2020].
+        </div>
+        <div>
+            Iconscout. 2020. Account Icon Of Line Style - Available In SVG, PNG, EPS, AI & Icon Fonts. [online] Available at: &lt;https: //iconscout.com/icon/account-269&gt;[Accessed 12 October 2020].
+        </div>
+        <div>
+            2020. [online] Available at: &lt;https: //www.amazon.ca/Acer-N50-600-UR1I-Desktop-i5-9400F-Graphics/dp/B0845JYJ3G/ref =sr_1_196?dchild =1&keywords =computer&qid =1602879968&s =pc&sr =1-196&gt;[Accessed 27 October 2020].
+        </div>
+        <div>
+            2020. [online] Available at: &lt;https: //www.amazon.ca/Dell-OptiPlex-9020-Computer-Wireless/dp/B089T5YQFP/ref =sr_1_94?dchild =1&keywords =computer&qid =1602879920&s =pc&sr =1-94&gt;[Accessed 16 October 2020].
+        </div>
+        <div>
+            Iconfinder. 2020. Logout Icons - Iconfinder. [online] Available at: &lt;https: //www.iconfinder.com/search/?q =logout&gt; [Accessed 20 October 2020].
+        </div>
+        <div>
+            Sql-server-helper.com. 2020. SQL Server Helper. [online] Available at: &lt;http: //www.sql-server-helper.com/error-messages/msg-339.aspx&gt; [Accessed 19 October 2020].
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,409 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{616A84D4-2CA5-40AF-9480-952FDF4A797C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TMA3A</RootNamespace>
+    <AssemblyName>TMA3A</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44363</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\tma3a.mdf" />
+    <Content Include="App_Data\tma3a_log.ldf">
+      <DependentUpon>tma3a.mdf</DependentUpon>
+    </Content>
+    <Content Include="part1\part1.aspx" />
+    <Content Include="part2\icons\back.png" />
+    <Content Include="part2\icons\forward.png" />
+    <Content Include="part2\icons\play.png" />
+    <Content Include="part2\icons\random.png" />
+    <Content Include="part2\icons\sequent.png" />
+    <Content Include="part2\icons\stop.png" />
+    <Content Include="part2\part2.aspx" />
+    <Content Include="part2\slideShow\1.jpg" />
+    <Content Include="part2\slideShow\10.jpg" />
+    <Content Include="part2\slideShow\11.jpg" />
+    <Content Include="part2\slideShow\12.jpg" />
+    <Content Include="part2\slideShow\13.jpg" />
+    <Content Include="part2\slideShow\14.jpg" />
+    <Content Include="part2\slideShow\15.jpg" />
+    <Content Include="part2\slideShow\16.jpg" />
+    <Content Include="part2\slideShow\17.jpg" />
+    <Content Include="part2\slideShow\18.jpg" />
+    <Content Include="part2\slideShow\19.jpg" />
+    <Content Include="part2\slideShow\2.jpg" />
+    <Content Include="part2\slideShow\20.jpg" />
+    <Content Include="part2\slideShow\3.jpg" />
+    <Content Include="part2\slideShow\4.jpg" />
+    <Content Include="part2\slideShow\5.jpg" />
+    <Content Include="part2\slideShow\6.jpg" />
+    <Content Include="part2\slideShow\7.jpg" />
+    <Content Include="part2\slideShow\8.jpg" />
+    <Content Include="part2\slideShow\9.jpg" />
+    <Content Include="part3\Checkout.aspx" />
+    <Content Include="part3\ComputerList.aspx" />
+    <Content Include="part3\ContactUs.aspx" />
+    <Content Include="part3\Customize.aspx" />
+    <Content Include="part3\FeedBack.aspx" />
+    <Content Include="part3\Login.aspx" />
+    <Content Include="part3\part3.aspx" />
+    <Content Include="part3\partList.aspx" />
+    <Content Include="part3\Return.aspx" />
+    <Content Include="part3\SignUp.aspx" />
+    <Content Include="part4\Cart.aspx" />
+    <Content Include="part4\ComputerList.aspx" />
+    <Content Include="part4\ContactUs.aspx" />
+    <Content Include="part4\Customize.aspx" />
+    <Content Include="part4\FeedBack.aspx" />
+    <Content Include="part4\Login.aspx" />
+    <Content Include="part4\Order.aspx" />
+    <Content Include="part4\part4.aspx" />
+    <Content Include="part4\partList.aspx" />
+    <Content Include="part4\Return.aspx" />
+    <Content Include="part4\SignUp.aspx" />
+    <Content Include="shared\icons\Account.png" />
+    <Content Include="shared\icons\bin.png" />
+    <Content Include="shared\icons\compCustom.png" />
+    <Content Include="shared\icons\cost.png" />
+    <Content Include="shared\icons\divider.png" />
+    <Content Include="shared\icons\edit.png" />
+    <Content Include="shared\icons\Hamburger_icon.png" />
+    <Content Include="shared\icons\List.png" />
+    <Content Include="shared\icons\monitor.png" />
+    <Content Include="shared\icons\parts.png" />
+    <Content Include="shared\icons\PCustom.png" />
+    <Content Include="shared\icons\shoppingCart.png" />
+    <Content Include="shared\image\comp3.jpg" />
+    <Content Include="shared\image\comp2.jpg" />
+    <Content Include="shared\image\comp1.png" />
+    <Content Include="shared\image\compMonitor.png" />
+    <Content Include="shared\image\cpu.jpg" />
+    <Content Include="shared\image\hardDrive.jpg" />
+    <Content Include="shared\image\logout.png" />
+    <Content Include="shared\image\os.jpg" />
+    <Content Include="shared\image\Ram.jpg" />
+    <Content Include="shared\image\soundCard.png" />
+    <Content Include="shared\report\cartInterface.png" />
+    <Content Include="shared\report\Computer Store.png" />
+    <Content Include="shared\report\Contact us Interface.png" />
+    <Content Include="shared\report\Customize Interface.png" />
+    <Content Include="shared\report\Feed Back Interface.png" />
+    <Content Include="shared\report\Login Interface.png" />
+    <Content Include="shared\report\PCustom_home.png" />
+    <Content Include="shared\report\Product display Interface.png" />
+    <Content Include="shared\report\Return&amp;Exchange Interface.png" />
+    <Content Include="shared\report\Sign up Interface.png" />
+    <Content Include="shared\report\UML.png" />
+    <Content Include="shared\tma3a.css" />
+    <Content Include="tma3a.htm" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataClasses1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="part1\part1.aspx.cs">
+      <DependentUpon>part1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="part1\part1.aspx.designer.cs">
+      <DependentUpon>part1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="part2\part2.aspx.cs">
+      <DependentUpon>part2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="part2\part2.aspx.designer.cs">
+      <DependentUpon>part2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="part3\Checkout.aspx.cs">
+      <DependentUpon>Checkout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="part3\Checkout.aspx.designer.cs">
+      <DependentUpon>Checkout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="part3\ComputerList.aspx.cs">
+      <DependentUpon>ComputerList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="part3\ComputerList.aspx.designer.cs">
+      <DependentUpon>ComputerList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="part3\computerParts\MasterList.cs" />
+    <Compile Include="part3\computerParts\Computer.cs" />
+    <Compile Include="part3\computerParts\CPU.cs" />
+    <Compile Include="part3\computerParts\Display.cs" />
+    <Compile Include="part3\computerParts\HardDrive.cs" />
+    <Compile Include="part3\computerParts\OpSys.cs" />
+    <Compile Include="part3\computerParts\Ram.cs" />
+    <Compile Include="part3\computerParts\Components.cs" />
+    <Compile Include="part3\computerParts\SoundCard.cs" />
+    <Compile Include="part3\ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="part3\ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="part3\Customize.aspx.cs">
+      <DependentUpon>Customize.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="part3\Customize.aspx.designer.cs">
+      <DependentUpon>Customize.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="part3\FeedBack.aspx.cs">
+      <DependentUpon>FeedBack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="part3\FeedBack.aspx.designer.cs">
+      <DependentUpon>FeedBack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="part3\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="part3\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="part3\part3.aspx.cs">
+      <DependentUpon>part3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="part3\part3.aspx.designer.cs">
+      <DependentUpon>part3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="part3\partList.aspx.cs">
+      <DependentUpon>partList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="part3\partList.aspx.designer.cs">
+      <DependentUpon>partList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="part3\Return.aspx.cs">
+      <DependentUpon>Return.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="part3\Return.aspx.designer.cs">
+      <DependentUpon>Return.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="part3\SignUp.aspx.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="part3\SignUp.aspx.designer.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="part4\Cart.aspx.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="part4\Cart.aspx.designer.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="part4\ComputerList.aspx.cs">
+      <DependentUpon>ComputerList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="part4\ComputerList.aspx.designer.cs">
+      <DependentUpon>ComputerList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="part4\ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="part4\ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="part4\Customize.aspx.cs">
+      <DependentUpon>Customize.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="part4\Customize.aspx.designer.cs">
+      <DependentUpon>Customize.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="part4\FeedBack.aspx.cs">
+      <DependentUpon>FeedBack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="part4\FeedBack.aspx.designer.cs">
+      <DependentUpon>FeedBack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="part4\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="part4\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="part4\Order.aspx.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="part4\Order.aspx.designer.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="part4\part4.aspx.cs">
+      <DependentUpon>part4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="part4\part4.aspx.designer.cs">
+      <DependentUpon>part4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="part4\partList.aspx.cs">
+      <DependentUpon>partList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="part4\partList.aspx.designer.cs">
+      <DependentUpon>partList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="part4\Return.aspx.cs">
+      <DependentUpon>Return.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="part4\Return.aspx.designer.cs">
+      <DependentUpon>Return.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="part4\SignUp.aspx.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="part4\SignUp.aspx.designer.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <Content Include="shared\report\Requirements.xlsx" />
+    <None Include="Properties\PublishProfiles\TMA3A20201027165959 - Web Deploy.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58302</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44363/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

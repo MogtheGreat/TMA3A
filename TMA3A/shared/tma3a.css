@@ -1,0 +1,632 @@
+﻿body {
+    background-color: #7395AE;
+    background: rgb(147,185,212);
+    background: radial-gradient(circle, rgba(147,185,212,1) 50%, rgba(115,149,174,1) 75%, rgba(85,122,149,1) 100%);
+}
+.topNavBar {
+    margin-left: -0.4%;
+    margin-top: -0.4%;
+    width: 100%;
+    height: 50px;
+    z-index: -1;
+}
+.navMenu {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 1;
+}
+.menuIcon {
+    width: 75px;
+    height: 75px;
+    z-index: 1;
+}
+.navMenuContent {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: -0.35em;
+    width: 150px;
+    min-width: 140px;
+    background-color: #888888;
+    border-radius: 5%;
+    text-align: center;
+}
+.navMenuContent a {
+    color: black;
+    font-size: 3em;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
+    border: 5px outset #707070;
+    border-radius: 5%;
+}
+.navMenuContent a:hover{
+    background-color: ghostwhite;
+}
+.navMenu:hover .navMenuContent {
+    display: block;
+}
+#homeLink {
+    color: black;
+    font-size: 4em;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
+    position: relative;
+    display: block;
+    margin-top: -1.2em;
+    margin-left: 1.5em;
+}
+.divider {
+    width: 900px;
+    height: 60px;
+    margin-left: 25%;
+}
+/********************Main Page*********************************/
+.coverPageMain {
+    margin-top: 5%;
+    text-align: center;
+}
+.coverPageTitle h1 {
+    font-size: 4em;
+    font-weight: bold;
+}
+.coverPageTitle h2{
+    font-size: 2em;
+}
+.CoverPageSub {
+    font-size: 0.75em;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+.subNav {
+    text-align: center;
+}
+.subNav a {
+    font-size: 1.5em;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    margin-left: 0.5em;
+}
+.descriptionNav a {
+    font-size: 1.2em;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    margin-left: 0.5em;
+}
+.assignmentDescription {
+    font-size: 1.5em;
+}
+.partDescription {
+    width: 95%;
+    margin-left: 2.5%;
+}
+.backToTop {
+    width: 10%;
+    height: 3.9em;
+    font-size: 1.0em;
+    text-align: center;
+    border-radius: 5%;
+    border: 1px solid black;
+    margin-left: 45%;
+    margin-top: 45%; 
+    background-color: rgba(93,92,97, 0.2);
+    position: fixed;
+}
+.backToTop:hover {
+    background-color: rgba(93,92,97, 1);
+    font-size: 1.5em;
+    font-weight: bold;
+    height: 5em;
+    /*margin-top: -94%;*/
+}
+.MainPageH3 {
+    margin-left: 15px;
+}
+.ReportImage {
+    width: 1200px;
+    height: 600px;
+}
+.DatabaseRelationshipContainer {
+    width: 1200px;
+    height: 600px;
+    background-color: whitesmoke;
+}
+/*********************Part 1*******************/
+.part1Container h1 {
+    text-align: center;
+}
+.part1Container p {
+    width: 90%;
+    font-size: 1.3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 7.5%;
+}
+#part1Labels {
+    width: 50%;
+    border: 5px outset #707070;
+    background-color: #d3d3d3;
+    position: relative;
+    margin: 0 auto;
+}
+.cookiePageLabels {
+    display: block;
+    position: relative;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: -1.5em;
+    float: right;
+}
+
+/******************Part 2*******************************/
+.slideShowContainer h1 {
+    text-align: center;
+    font-size: 4em;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: -0.1em;
+}
+.slideShow {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: -2em;
+    margin-bottom: 10px;
+}
+.slideShowImage {
+    width: 504px;
+    height: 672px;
+}
+.slideShowCaptions {
+    width: 4em;
+    height: 2em;
+    margin-left: 36.5%;
+    margin-bottom: 40px;
+}
+#imageCaption {
+    width: 500px;
+    height: 60px;
+    font-size: 1.5em;
+    white-space: pre-wrap;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.slideShowControls {
+    width: 35%;
+    height: 10em;
+    border: 5px solid #707070;
+    background-color: #d3d3d3;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+.controlImage {
+    width: 80px;
+    height: 80px;
+    margin-left: 1em;
+}
+
+/********************Part 3************************/
+.storeMenuArea {
+    border: 5px outset #888888;
+    width: 102%;
+    height: 5em;
+    background-color: #888888;
+    margin-left: -0.6em;
+    margin-top: 2em;
+}
+.storeLogo {
+    width: 250px;
+    height: 80px;
+    margin-left: 2.5em;
+}
+.storeAccount {
+    width: 4em;
+    height: 5em;
+    float: right;
+    margin-top: -0.2em;
+    margin-right: 2em;
+    text-align: center;
+}
+.accountLogo {
+    width: 60px;
+    height: 60px;
+}
+.cartIcon {
+    width: 75px;
+    height: 75px;
+    float: right;
+    margin-top: -0.2em;
+    margin-right: 4em;
+}
+.storeNavMenu {
+    border: 1px solid black;
+    width: 102%;
+    height: 2.1em;
+    text-align: center;
+    background-color: #707070;
+    margin-left: -0.6em;
+}
+.storeNavMenu a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-left: 3em;
+}
+.storeDisplayArea {
+    border: 3px solid black;
+    width: 80%;
+    height: 50em;
+    background-color: #f2f3f4; /*Anti-flash white*/
+    overflow: auto;
+    position: relative;
+    margin: 0 auto;
+}
+.storeDisplayArea h1 {
+    font-size: 5em;
+    text-align: center;
+}
+.storeDisplayArea h2 {
+    text-align: center;
+}
+#intro {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 10em;
+}
+.colOne {
+    width: 33%;
+    float: left;
+    margin-left: 15%;
+    margin-bottom: 10px;
+}
+.colOne img {
+    width: 64px;
+    height: 64px;
+    float: left;
+}
+.colTwo {
+    width: 33%;
+    float: right;
+    margin-right: 15%;
+    margin-bottom: 10px;
+}
+.colTwo img {
+    width: 64px;
+    height: 64px;
+    float: left;
+}
+.bottomNavContainer {
+    border: 1px solid black;
+    width: 102%;
+    height: 10%;
+    position: absolute;
+    background-color: #707070;
+    margin-left: -0.6em;
+}
+.bottomNav {
+    width: 8em;
+    margin-top: -1em;
+    margin-left: 1em;
+}
+.bottomNav h4 {
+    margin-bottom: 0px;
+}
+.bottomNav a {
+    font-size: 1em;
+    text-decoration: none;
+}
+/******ContactUs********/
+.customerSupportTitle {
+    font-size: 1.7em;
+    margin-top: 1em;
+}
+.contactInfo {
+    width: 10em;
+    margin-bottom: 2em;
+    margin-left: 46%;
+}
+.contactInfo p {
+    margin-bottom: -1em;
+}
+/********Return*******/
+#returnInstruct {
+    margin-left: 25px;
+}
+#mailAddress {
+    width: 500px;
+    font-size: 2em;
+    font-weight: bold;
+    position: relative;
+    margin: 0 auto;
+}
+/*****Feedback*****/
+#FeedBackInstruct {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 12em;
+}
+#FeedBackBox {
+    width: 55%;
+    height: 10em;
+    font-size: 1.1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 15em;
+}
+#SubmitFeedBack {
+    width: 5em;
+    height: 2.5em;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: #888888;
+    margin-left: 50em;
+    margin-top: 1em;
+}
+/******login.aspx******/
+.loginArea {
+    width: 45%;
+    float: left;
+}
+.loginArea div {
+    margin-bottom: 1em;
+}
+#emailLabel {
+    margin-left: 1em;
+    font-weight: bold;
+}
+#emailLoginBox {
+    width: 16em;
+    margin-left: 2.2em;
+}
+#passwordLabel {
+    margin-left: 1em;
+    font-weight: bold;
+}
+#passwordBox {
+    width: 16em;
+    margin-left: 0.5em;
+}
+#loginButton {
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-left: 9em;
+    background-color: #707070;
+}
+.signUpArea {
+    width: 45%;
+    float: right;
+}
+.signUpArea p {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+#signupButton {
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-left: 9em;
+    background-color: #707070;
+}
+/*********SignUp.aspx*********/
+.registerationArea {
+    width: 40em;
+    position: relative;
+    margin: 0 auto;
+}
+.registerationArea div {
+    margin-bottom: 15px;
+}
+.registerationArea p {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.signUpLabel {
+    font-weight: bold;
+    margin-right: 1em;
+}
+.signUpInput {
+    width: 20em;
+    float: right;
+    margin-right: 15em;
+}
+.signUpValidator {
+    font-weight: bold;
+    color: darkred;
+}
+#RegisterButton {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #888888;
+    border: 2px outset #707070;
+    border-radius: 10px;
+    padding: 8px 16px;
+    margin-left: 25%;
+}
+/*******ProductList.aspx**********/
+.productImage {
+    width: 300px;
+    height: 300px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, tr, td, th {
+    border: 1px solid black;
+}
+th {
+    background-color: lightgray;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.prodImage {
+    width: 350px;
+}
+.prodDescript {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.prodPrice {
+    width: 100px;
+}
+.prodOption {
+    width: 160px;
+    text-align: center;
+}
+.buyProd {
+    width: 150px;
+    height: 75px;
+    border: 2px solid darkred;
+    background-color: red;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+/**********ComputerList.aspx***********/
+.compListOpt {
+    width: 6em;
+    height: 3.75em;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: red;
+    margin-bottom: 15px;
+}
+/********Customize.aspx*******/
+.CustomCompDescription {
+    width: 100%;
+    height: 7em;
+    font-size: 1.75em;
+    font-weight: bold;
+}
+.CustomCompDescription div {
+    margin-top: 1em;
+    margin-left: 5em;
+}
+.CustomCompDescription button {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+#CancelCustom {
+    width: 3.5em;
+    height: 2em;
+    font-size: 1.25em;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 5%;
+    background-color: darkgrey;
+    margin-right: 5em;
+}
+#AddCustom {
+    width: 6em;
+    height: 2em;
+    font-size: 1.25em;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 5%;
+    background-color: red;
+    margin-right: 5em;
+}
+.CustomSection {
+    width: 100%;
+    height: 5em;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 1px solid black;
+}
+.CustomSection select {
+    float: right;
+    margin-right: 10px;
+}
+/************Checkout.aspx*************/
+.ItemsInCart{
+    width: 49%
+}
+.TotalCost {
+    width: 49%;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top:3em;
+}
+div.CalculatingTotal {
+    border-bottom: 1px solid black;
+}
+#CalculatingContainer {
+    border: 1px solid black;
+}
+#Cancel {
+    width: 6em;
+    height: 2em;
+    font-size: 1.25em;
+    font-weight: bold;
+    background-color: darkgrey;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+#PayButton {
+    width: 6em;
+    height: 2em;
+    font-size: 1.25em;
+    font-weight: bold;
+    background-color: red;
+    margin-top: 15px;
+}
+/*************************Part 4***************************/
+.logoutIcon {
+    width: 60px;
+    height: 60px;
+    float: right;
+    margin-right: 10px;
+    display: none;
+}
+/********Login.aspx************/
+.passwordRecoverArea {
+    width: 45%;
+    float: right;
+    margin-top: 1em;
+}
+#pswdRecoverText {
+    width: 20em;
+    height: 1.6em;
+}
+#pswdRecoverButt {
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #888888;
+    border: 2px outset #707070;
+    padding: 2px 4px;
+    margin-left: 50%;
+    margin-top: 15px;
+}
+/*************Cart.aspx**************/
+.OrderNumberDisplay {
+    margin-bottom: 1.5em;
+    margin-left: 15px;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+.instructOrder {
+    margin-left: 25px;
+    font-size: 1.3em;
+}
+.instructImage {
+    width: 24px;
+    height: 24px;
+}
+/*******************Order.aspx*******************/
+.DateCol {
+    font-weight: bold;
+    text-align: left;
+    width: 12em;
+}
+.OrderNumCol {
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+.TotalCol {
+    width: 7em;
+}
+.OrderOptCol {
+    text-align: center;
+    width: 7em;
+}
